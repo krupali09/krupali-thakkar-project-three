@@ -239,7 +239,6 @@ h1, h2 {
 }
 
 h2 {
-  text-transform: none;
   font-size: 4rem;
   color: goldenrod;
 }
@@ -248,7 +247,7 @@ section {
   text-align: center;
   padding: 35px 25px 15px 25px;
   margin: 40px;
-  border: 5px solid goldenrod;
+  border: 10px solid goldenrod;
   background-color: black;
 }
 
@@ -278,7 +277,7 @@ ul {
 }
 
 ul li {
-  padding: 10px 25px 0 25px;
+  padding: 10px 75px 0 25px;
 }
 
 p {
@@ -288,13 +287,54 @@ p {
   font-family: 'Ranchers';
   letter-spacing: 2px;
   word-spacing: 5px;
+  -webkit-animation: blinker 5s linear infinite;
+          animation: blinker 5s linear infinite;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0.8;
+    color: skyblue;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.8;
+    color: skyblue;
+  }
 }
 
 .imageContainer {
-  width: 700px;
+  width: auto;
+  height: auto;
   margin: 0 auto;
 }
 
 .imageContainer img {
   max-width: 70%;
+  -webkit-box-shadow: 10px 10px skyblue;
+          box-shadow: 10px 10px skyblue;
+  -webkit-animation: fadeIn ease 3s;
+          animation: fadeIn ease 3s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
