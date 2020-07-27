@@ -3,9 +3,10 @@ html {
 }
 
 body {
-    background-image: url(../styles/assets/galaxy.jpg);
+    background-image: url(../styles/assets/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .wrapper {
@@ -102,3 +103,11 @@ p {
     opacity:1;
     }
 }
+
+footer h3 {
+    font-size: 3rem;
+    color: skyblue;
+    font-family: 'Rancher' sans-serif;
+    text-align: center;
+}
+
